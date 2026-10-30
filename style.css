@@ -147,3 +147,63 @@ footer {
     font-size: 12px;
     font-weight: bold;
 }
+
+/* Flexbox practice */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #dbeafe;
+    color: #173b67;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px 12px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-list {
+        justify-content: flex-start;
+    }
+}
